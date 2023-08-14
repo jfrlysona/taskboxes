@@ -1,0 +1,133 @@
+.container {
+  position: absolute;
+  bottom: 25%;
+  right: 40%;
+}
+.container .pink {
+  background-color: #F24464;
+  display: inline-block;
+  min-width: 100px;
+  min-height: 100px;
+  margin-left: 15px;
+}
+.container .green {
+  background-color: #03A64A;
+  display: inline-block;
+  min-width: 100px;
+  min-height: 100px;
+  margin-left: 15px;
+}
+.container .orange {
+  background-color: #F2B705;
+  display: inline-block;
+  min-width: 100px;
+  min-height: 100px;
+  margin-left: 15px;
+}
+
+@keyframes moveOnEdges {
+  0% {
+    top: -100px;
+    left: -100px;
+  }
+  25% {
+    top: -100px;
+    left: 100px;
+  }
+  50% {
+    top: 100px;
+    left: 100px;
+  }
+  75% {
+    top: 100px;
+    left: -100px;
+  }
+  100% {
+    top: -100px;
+    left: -100px;
+  }
+}
+@keyframes rotateAndScale {
+  0% {
+    transform: rotate(0deg) scale(1, 1);
+  }
+  10% {
+    transform: rotate(36deg) scale(1.25, 1.25);
+  }
+  20% {
+    transform: rotate(72deg) scale(1.5, 1.5);
+  }
+  30% {
+    transform: rotate(108deg) scale(1.75, 1.75);
+  }
+  40% {
+    transform: rotate(144deg) scale(2, 2);
+  }
+  50% {
+    transform: rotate(180deg) scale(2.25, 2.25);
+  }
+  60% {
+    transform: rotate(144deg) scale(2, 2);
+  }
+  70% {
+    transform: rotate(108deg) scale(1.75, 1.75);
+  }
+  80% {
+    transform: rotate(72deg) scale(1.5, 1.5);
+  }
+  90% {
+    transform: rotate(36deg) scale(1.25, 1.25);
+  }
+  100% {
+    transform: rotate(0deg) scale(1, 1);
+  }
+}
+@keyframes randomColor {
+  0% {
+    background-color: #F24464;
+  }
+  25% {
+    background-color: #F299D3;
+  }
+  50% {
+    background-color: #03A64A;
+  }
+  75% {
+    background-color: #F2E205;
+  }
+  100% {
+    background-color: #F2B705;
+  }
+}
+@keyframes all {
+  0% {
+    top: -100px;
+    left: -100px;
+    background-color: #F24464;
+    transform: rotate(36deg) scale(1, 1);
+  }
+  25% {
+    top: -100px;
+    left: 100px;
+    background-color: #F299D3;
+    transform: rotate(108deg) scale(1.5, 1.5);
+  }
+  50% {
+    top: 100px;
+    left: 100px;
+    background-color: #03A64A;
+    transform: rotate(180deg) scale(2.25, 2.25);
+  }
+  75% {
+    top: 100px;
+    left: -100px;
+    background-color: #F2E205;
+    transform: rotate(108deg) scale(1.5, 1.5);
+  }
+  100% {
+    top: -100px;
+    left: -100px;
+    background-color: #F2B705;
+    transform: rotate(36deg) scale(1, 1);
+  }
+}/*# sourceMappingURL=style.css.map */
